@@ -29,7 +29,6 @@
 
             <Button
                 android:layout_width="match_parent"
-
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:layout_weight="2"
@@ -40,11 +39,31 @@
                 android:textStyle="italic" />
         </LinearLayout>
 
-        <EditText
-            android:id="@+id/edtType"
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_height="wrap_content"
-            android:hint="Type" />
+            android:layout_width="match_parent">
+
+
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/edtType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Type" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="2"
+                android:onClick="clickRoute"
+                android:text="@string/route"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
 
         <LinearLayout
             android:layout_width="match_parent"
